@@ -2,7 +2,7 @@ import requests
 import urllib.request
 from bs4 import BeautifulSoup
 
-
+# crawling
 def userIDCrawling(ID):
     url = f'https://maplestory.nexon.com/N23Ranking/World/Total?c={ID}&w=0'
     soup = crawling(url)
