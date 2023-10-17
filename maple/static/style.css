@@ -1,0 +1,123 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  height: 50px;
+  vertical-align: top;
+  width: 13%;
+}
+
+.tabplus {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  height: 50px;
+  vertical-align: top;
+  width: 5%;
+}
+
+.tablink:hover, .tabplus:hover{
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  color: white;
+  display: none;
+  padding: 10px 10px;
+  height: 100%;
+}
+
+.tabheader {
+  color: "#EEE";
+  padding: 10px 10px;
+  text-align: center;
+  height: 15%;
+}
+
+.bossCheckBoxLabel, .symbolCheckBoxLabel {
+  padding: 1px;
+  cursor: pointer;
+  display: flex;
+}
+
+.bossCheckBoxLabel input[type="checkbox"], .symbolCheckBoxLabel input[type="checkbox"]{
+  display: none;
+}
+
+.bossCheckBoxLabel .icon-box{
+  position: relative;
+  display: flex;
+  width: 100px;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #353746;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 21px;
+  transition: 0.5s;
+  user-select: none;
+}
+.symbolCheckBoxLabel .icon-box{
+  position: relative;
+  display: flex;
+  width: 120px;
+  padding: 17px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #353746;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 34px;
+  transition: 0.5s;
+  user-select: none;
+}
+.bossCheckBoxLabel input[type="checkbox"]:checked ~ .icon-box,
+.symbolCheckBoxLabel input[type="checkbox"]:checked ~ .icon-box{
+  background: linear-gradient(138deg, #15c232, #78d311);
+  color: #2c2a2a;
+}
+
+.bossCheckBoxLabel input[type="checkbox"]:disabled ~ .icon-box,
+.symbolCheckBoxLabel input[type="checkbox"]:disabled ~ .icon-box{
+  background: linear-gradient(138deg, #323, #555);
+  color: #F37;
+}
+
+.bossCheckBoxLabel span, .symbolCheckBoxLabel span{
+  margin: 5px;
+  font-size: 18px;
+}
+div.col.bossDifficultyCol, div.col.symbolPeriodCol{
+  padding: 0px;
+  margin: 0px;
+}
+
+label.bossCheckBoxLabel, label.symbolCheckBoxLabel{
+  padding: 0px;
+}
+.bossPersonalWrapper, .symbolPersonalWrapper{
+  padding: 0px 0px 4px 0px;
+}
+
+

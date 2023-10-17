@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Maple Story Homework Scheduler</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.1.2/socket.io.min.js"></script>
+    
+    <script src="{{ url_for('static',filename='init.js') }}"></script>
+    <script src="{{ url_for('static',filename='data.js') }}"></script>
+    <script src="{{ url_for('static',filename='main.js') }}"></script>
+    <script src="{{ url_for('static',filename='hw.js') }}"></script>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap.min.css') }}">
+    <style type="text/css">
+        html, body{width:100%; height:100%; padding:5px; margin:5px;}
+    </style>
+</head>
+<body>
+    {% include "navbar.html" %}
+    {% block content %}
+    {% endblock %}
+    
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+</body>
+</html>

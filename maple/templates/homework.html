@@ -1,0 +1,1117 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    <div id='offcanvas_boss_group' class='offcanvas_boss_group'>
+      <h5 class="list-group">Boss</h5>
+
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Zaqqum" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Zaqqum">자쿰</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Magnus" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Magnus">매그너스</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Hilla" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Hilla">힐라</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Kaung" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Kaung">카웅</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Papulatus" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Papulatus">파풀라투스</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Pierre" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Pierre">피에르</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Banban" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Banban">반반</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_BloodyQueen" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_BloodyQueen">블러디 퀸</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Bellum" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Bellum">벨룸</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_VonLeon" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_VonLeon">반 레온</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Horntail" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Horntail">혼테일</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Arkarium" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Arkarium">아카이럼</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_PinkBean" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_PinkBean">핑크빈</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Cygnus" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Cygnus">시그너스</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Swoo" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Swoo">스우</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Damian" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Damian">데미안</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_GuardianAngelSlime" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_GuardianAngelSlime">가디언 엔젤 슬라임</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Lucid" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Lucid">루시드</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Will" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Will">윌</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Dusk" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Dusk">더스크</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_ZinHilla" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_ZinHilla">진 힐라</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Dunkel" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Dunkel">듄켈</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_BlackMage" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_BlackMage">검은 마법사</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Seren" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Seren">세렌</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Kalos" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Kalos">칼로스</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_boss_CheckboxClass" type="checkbox" id="offcanvas_boss_Kaling" checked>
+        <label class="form-check-label offcanvas_boss_label" for="offcanvas_boss_Kaling">카링</label>
+      </div>
+
+
+      
+    </div>
+
+    <div id='offcanvas_symbol_group' class='offcanvas_symbol_group'>
+      <h5 class="list-group">Symbol</h5>
+
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_symbol_CheckboxClass" type="checkbox" id="offcanvas_symbol_arcane1" checked>
+        <label class="form-check-label offcanvas_symbol_label" for="offcanvas_symbol_arcane1">소멸의 여로</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_symbol_CheckboxClass" type="checkbox" id="offcanvas_symbol_arcane2" checked>
+        <label class="form-check-label offcanvas_symbol_label" for="offcanvas_symbol_arcane2">츄츄 아일랜드</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_symbol_CheckboxClass" type="checkbox" id="offcanvas_symbol_arcane3" checked>
+        <label class="form-check-label offcanvas_symbol_label" for="offcanvas_symbol_arcane3">레헬른</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_symbol_CheckboxClass" type="checkbox" id="offcanvas_symbol_arcane4" checked>
+        <label class="form-check-label offcanvas_symbol_label" for="offcanvas_symbol_arcane4">아르카나</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_symbol_CheckboxClass" type="checkbox" id="offcanvas_symbol_arcane5" checked>
+        <label class="form-check-label offcanvas_symbol_label" for="offcanvas_symbol_arcane5">모라스</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_symbol_CheckboxClass" type="checkbox" id="offcanvas_symbol_arcane6" checked>
+        <label class="form-check-label offcanvas_symbol_label" for="offcanvas_symbol_arcane6">에스페라</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_symbol_CheckboxClass" type="checkbox" id="offcanvas_symbol_arcane7" checked>
+        <label class="form-check-label offcanvas_symbol_label" for="offcanvas_symbol_arcane7">문브릿지</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_symbol_CheckboxClass" type="checkbox" id="offcanvas_symbol_arcane8" checked>
+        <label class="form-check-label offcanvas_symbol_label" for="offcanvas_symbol_arcane8">고통의 미궁</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_symbol_CheckboxClass" type="checkbox" id="offcanvas_symbol_arcane9" checked>
+        <label class="form-check-label offcanvas_symbol_label" for="offcanvas_symbol_arcane9">리멘</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_symbol_CheckboxClass" type="checkbox" id="offcanvas_symbol_authentic1" checked>
+        <label class="form-check-label offcanvas_symbol_label" for="offcanvas_symbol_authentic1">세르니움</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_symbol_CheckboxClass" type="checkbox" id="offcanvas_symbol_authentic2" checked>
+        <label class="form-check-label offcanvas_symbol_label" for="offcanvas_symbol_authentic2">아르크스</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_symbol_CheckboxClass" type="checkbox" id="offcanvas_symbol_authentic3" checked>
+        <label class="form-check-label offcanvas_symbol_label" for="offcanvas_symbol_authentic3">오디움</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_symbol_CheckboxClass" type="checkbox" id="offcanvas_symbol_authentic4" checked>
+        <label class="form-check-label offcanvas_symbol_label" for="offcanvas_symbol_authentic4">도원경</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_symbol_CheckboxClass" type="checkbox" id="offcanvas_symbol_authentic5" checked>
+        <label class="form-check-label offcanvas_symbol_label" for="offcanvas_symbol_authentic5">아르테리아</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_symbol_CheckboxClass" type="checkbox" id="offcanvas_symbol_authentic6" checked>
+        <label class="form-check-label offcanvas_symbol_label" for="offcanvas_symbol_authentic6">카르시온</label>
+      </div>
+    </div>
+
+    <div id='offcanvas_basic_group' class='offcanvas_basic_group'>
+      <h5 class="list-group">Basic</h5>
+
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_basic_CheckboxClass" type="checkbox" id="offcanvas_basic_Ursus" checked>
+        <label class="form-check-label offcanvas_basic_label" for="offcanvas_basic_Ursus">우르스</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_basic_CheckboxClass" type="checkbox" id="offcanvas_basic_Farm" checked>
+        <label class="form-check-label offcanvas_basic_label" for="offcanvas_basic_Farm">농장 와르</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_basic_CheckboxClass" type="checkbox" id="offcanvas_basic_Gift" checked>
+        <label class="form-check-label offcanvas_basic_label" for="offcanvas_basic_Gift">데일리 기프트</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_basic_CheckboxClass" type="checkbox" id="offcanvas_basic_MonsterPark" checked>
+        <label class="form-check-label offcanvas_basic_label" for="offcanvas_basic_MonsterPark">몬스터 파크</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_basic_CheckboxClass" type="checkbox" id="offcanvas_basic_UnionCoin" checked>
+        <label class="form-check-label offcanvas_basic_label" for="offcanvas_basic_UnionCoin">유니온 코인</label>
+      </div>
+      
+    </div>
+    
+    <div id='offcanvas_event_group' class='offcanvas_event_group'>
+      <h5 class="list-group">Event</h5>
+
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_event_CheckboxClass" type="checkbox" id="offcanvas_event_BasicCheck" checked>
+        <label class="form-check-label offcanvas_event_label" for="offcanvas_event_BasicCheck">이벤트 기본 출석</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_event_CheckboxClass" type="checkbox" id="offcanvas_event_DeepCheck" checked>
+        <label class="form-check-label offcanvas_event_label" for="offcanvas_event_DeepCheck">이벤트 심화 출석</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_event_CheckboxClass" type="checkbox" id="offcanvas_event_EXPFarm" checked>
+        <label class="form-check-label offcanvas_event_label" for="offcanvas_event_EXPFarm">이벤트 식량창고</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_event_CheckboxClass" type="checkbox" id="offcanvas_event_EXPPunchKing" checked>
+        <label class="form-check-label offcanvas_event_label" for="offcanvas_event_EXPPunchKing">이벤트 코코넛 스매시</label>
+      </div>
+      <div class="form-check form-switch">
+        <input class="form-check-input offcanvas_event_CheckboxClass" type="checkbox" id="offcanvas_event_EXPAdventure" checked>
+        <label class="form-check-label offcanvas_event_label" for="offcanvas_event_EXPAdventure">이벤트 어드벤쳐</label>
+      </div>
+    </div>
+
+
+
+  </div>
+
+
+</div>
+
+<div id="container" class="row">
+    <div id="header" class="tabheader">
+      <table>
+        <tr>
+          <td rowspan="4" style="background:radial-gradient(circle, yellow, white, white);"><img src="{{ url_for('static', filename='img/header_default.png')}}" id="header_img" ></img></td>
+          <td id="homework_header_nickname" style="font-size:21px"></td>
+        </tr>
+        <tr>
+          <td id="homework_header_level"></td>
+        </tr>
+        <tr>
+          <td id="homework_header_job"></td>
+        </tr>
+        <tr>
+          <td id="settingBtnGroup">
+            <img src="{{ url_for('static', filename='img/homeworkDelete.png')}}" id='hwDeleteImg' style="display:none"/>
+            <img src="{{ url_for('static', filename='img/homeworkSetting.png')}}" id='hwSettingImg' style="display:none"/>
+          </td>
+        </tr>
+      </table>
+      
+    </div>
+
+    <div id="mainBtn">
+        <button class="tablink" onclick="clickHomeworkNickname(this)" id="1" style="display:none">London</button>
+        <button class="tabplus" id="nicknamePlusTab" onclick="charactorPlusClick(this)">+</button>
+    </div>
+
+    <div id="content_1" class="tabcontent">
+    </div>
+</div>
+<br><br><br>
+<div id='homeWorkMainDIV' class="row">
+    <div class="row">
+        <div class="col">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne" id="bossWrapperBtn">
+                        BOSS
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                  
+                  <div class="accordion-body" id="bossContentsWrapper">
+                    <table>
+                      <tr class="bossPersonalWrapper" id="bossZaqqumWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Zaqqum.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel" for='boss_daily_Zaqqum_Easy'>
+                            <input type="checkbox" name="" id='boss_daily_Zaqqum_Easy' class='bossCheckboxClass'/>
+                              <span class="icon-box">Easy</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_Zaqqum_Normal' class='bossCheckboxClass'/>
+                              <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Zaqqum_Chaos' class='bossCheckboxClass'/>
+                            <span class="icon-box">Choas</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossMagnusWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Magnus.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_Magnus_Easy' class='bossCheckboxClass'/>
+                              <span class="icon-box">Easy</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_Magnus_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Magnus_Hard' class='bossCheckboxClass'/>
+                            <span class="icon-box">Hard</span>
+                          </label>
+                        </td>
+                      </tr>
+                      
+                      <tr class="bossPersonalWrapper" id="bossHillaWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Hilla.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_Hilla_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Hilla_Hard' class='bossCheckboxClass'/>
+                            <span class="icon-box">Hard</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossKaungWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Kaung.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_Kaung_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossPapulatusWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Papulatus.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_Papulatus_Easy' class='bossCheckboxClass'/>
+                            <span class="icon-box">Easy</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_Papulatus_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Papulatus_Chaos' class='bossCheckboxClass'/>
+                            <span class="icon-box">Choas</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossPierreWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Pierre.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_Pierre_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Pierre_Chaos' class='bossCheckboxClass'/>
+                            <span class="icon-box">Chaos</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossBanbanWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_banban.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_Banban_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Banban_Chaos' class='bossCheckboxClass'/>
+                            <span class="icon-box">Chaos</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossBloodyQueenWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_BloodyQueen.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_BloodyQueen_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_BloodyQueen_Chaos' class='bossCheckboxClass'/>
+                            <span class="icon-box">Chaos</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossBellumWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Bellum.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_Bellum_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Bellum_Chaos' class='bossCheckboxClass'/>
+                            <span class="icon-box">Chaos</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossVonLeonWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_VonLeon.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_VonLeon_Easy' class='bossCheckboxClass'/>
+                            <span class="icon-box">Easy</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_VonLeon_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_VonLeon_Hard' class='bossCheckboxClass'/>
+                            <span class="icon-box">Hard</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossHorntailWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Horntail.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_Horntail_Easy' class='bossCheckboxClass'/>
+                            <span class="icon-box">Easy</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_Horntail_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_Horntail_Chaos' class='bossCheckboxClass'/>
+                            <span class="icon-box">Choas</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossArkariumWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Arkarium.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_Arkarium_Easy' class='bossCheckboxClass'/>
+                            <span class="icon-box">Easy</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_Arkarium_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossPinkBeanWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_PinkBean.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_daily_PinkBean_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_PinkBean_Chaos' class='bossCheckboxClass'/>
+                            <span class="icon-box">Chaos</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossCygnusWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Cygnus.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Cygnus_Easy' class='bossCheckboxClass'/>
+                            <span class="icon-box">Easy</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Cygnus_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossSwooWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Swoo.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Swoo_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Swoo_Hard' class='bossCheckboxClass'/>
+                            <span class="icon-box">Hard</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossDamianWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Damian.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Damian_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Damian_Hard' class='bossCheckboxClass'/>
+                            <span class="icon-box">Hard</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossGuardianAngelSlimeWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_GuardianAngelSlime.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_GuardianAngelSlime_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_GuardianAngelSlime_Chaos' class='bossCheckboxClass'/>
+                            <span class="icon-box">Chaos</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossLucidWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Lucid.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Lucid_Easy' class='bossCheckboxClass'/>
+                            <span class="icon-box">Easy</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Lucid_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Lucid_Hard' class='bossCheckboxClass'/>
+                            <span class="icon-box">Hard</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossWillWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Will.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Will_Easy' class='bossCheckboxClass'/>
+                            <span class="icon-box">Easy</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Will_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Will_Hard' class='bossCheckboxClass'/>
+                            <span class="icon-box">Hard</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossDuskWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Dusk.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Dusk_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Dusk_Chaos' class='bossCheckboxClass'/>
+                            <span class="icon-box">Chaos</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossZinHillaWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_ZinHilla.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_ZinHilla_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_ZinHilla_Hard' class='bossCheckboxClass'/>
+                            <span class="icon-box">Hard</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossDunkelWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Dunkel.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Dunkel_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Dunkel_Hard' class='bossCheckboxClass'/>
+                            <span class="icon-box">Hard</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossBlackMageWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_BlackMage.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_monthly_BlackMage_Hard' class='bossCheckboxClass'/>
+                            <span class="icon-box">Hard</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_monthly_BlackMage_Extreme' class='bossCheckboxClass'/>
+                            <span class="icon-box">Extreme</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossSerenWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Seren.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Seren_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Seren_Hard' class='bossCheckboxClass'/>
+                            <span class="icon-box">Hard</span>
+                          </label>
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Seren_Extreme' class='bossCheckboxClass'/>
+                            <span class="icon-box">Extreme</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossKalosWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Kalos.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Kalos_Chaos' class='bossCheckboxClass'/>
+                            <span class="icon-box">Chaos</span>
+                          </label>
+                        </td>
+                      </tr>
+                      <tr class="bossPersonalWrapper" id="bossKalingWrapper">
+                        <td class="bossImageCol">
+                          <img src="{{ url_for('static', filename='img/boss/Boss_Kaling.png')}}" />
+                        </td>
+                        <td class="bossDifficultyCol">
+                          <label class="bossCheckBoxLabel">
+                            <input type="checkbox" name="" id='boss_weekly_Kaling_Normal' class='bossCheckboxClass'/>
+                            <span class="icon-box">Normal</span>
+                          </label>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo" id="symbolWrapperBtn">
+                        SYMBOL
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body" id="symbolContentsWrapper">
+                      <table>
+                        <tr class="symbolPersonalWrapper" id="arcane1_Wrapper">
+                          <td class="symbolImageCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arcane1.png')}}" />
+                          </td>
+                          <td class="symbolNamingCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arc1.png')}}" />
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_arcane1_daily' class='symbolCheckboxClass'/>
+                                <span class="icon-box">일일</span>
+                            </label>
+                      
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_arcane1_weekly' class='symbolCheckboxClass'/>
+                                <span class="icon-box">주간</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr class="symbolPersonalWrapper" id="arcane2_Wrapper">
+                          <td class="symbolImageCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arcane2.png')}}" />
+                          </td>
+                          <td class="symbolNamingCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arc2.png')}}" />
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_arcane2_daily' class='symbolCheckboxClass'/>
+                                <span class="icon-box">일일</span>
+                            </label>
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_arcane2_weekly' class='symbolCheckboxClass'/>
+                                <span class="icon-box">주간</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr class="symbolPersonalWrapper" id="arcane3_Wrapper">
+                          <td class="symbolImageCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arcane3.png')}}" />
+                          </td>
+                          <td class="symbolNamingCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arc3.png')}}" />
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_arcane3_daily' class='symbolCheckboxClass'/>
+                                <span class="icon-box">일일</span>
+                            </label>
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_arcane3_weekly' class='symbolCheckboxClass'/>
+                                <span class="icon-box">주간</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr class="symbolPersonalWrapper" id="arcane4_Wrapper">
+                          <td class="symbolImageCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arcane4.png')}}" />
+                          </td>
+                          <td class="symbolNamingCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arc4.png')}}" />
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_arcane4_daily' class='symbolCheckboxClass'/>
+                                <span class="icon-box">일일</span>
+                            </label>
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_arcane4_weekly' class='symbolCheckboxClass'/>
+                                <span class="icon-box">주간</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr class="symbolPersonalWrapper" id="arcane5_Wrapper">
+                          <td class="symbolImageCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arcane5.png')}}" />
+                          </td>
+                          <td class="symbolNamingCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arc5.png')}}" />
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_arcane5_daily' class='symbolCheckboxClass'/>
+                                <span class="icon-box">일일</span>
+                            </label>
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_arcane5_weekly' class='symbolCheckboxClass'/>
+                                <span class="icon-box">주간</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr class="symbolPersonalWrapper" id="arcane6_Wrapper">
+                          <td class="symbolImageCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arcane6.png')}}" />
+                          </td>
+                          <td class="symbolNamingCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arc6.png')}}" />
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_arcane6_daily' class='symbolCheckboxClass'/>
+                                <span class="icon-box">일일</span>
+                            </label>
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_arcane6_weekly' class='symbolCheckboxClass'/>
+                                <span class="icon-box">주간</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr class="symbolPersonalWrapper" id="arcane7_Wrapper">
+                          <td class="symbolImageCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arcane7.png')}}" />
+                          </td>
+                          <td class="symbolNamingCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arc7.png')}}" />
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_arcane7_daily' class='symbolCheckboxClass'/>
+                                <span class="icon-box">일일</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr class="symbolPersonalWrapper" id="arcane8_Wrapper">
+                          <td class="symbolImageCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arcane8.png')}}" />
+                          </td>
+                          <td class="symbolNamingCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arc8.png')}}" />
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_arcane8_daily' class='symbolCheckboxClass'/>
+                                <span class="icon-box">일일</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr class="symbolPersonalWrapper" id="arcane9_Wrapper">
+                          <td class="symbolImageCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arcane9.png')}}" />
+                          </td>
+                          <td class="symbolNamingCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Arc9.png')}}" />
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_arcane9_daily' class='symbolCheckboxClass'/>
+                                <span class="icon-box">일일</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr class="symbolPersonalWrapper" id="authentic1_Wrapper">
+                          <td class="symbolImageCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Authentic1.png')}}" />
+                          </td>
+                          <td class="symbolNamingCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Auth1.png')}}" />
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_authentic1_daily' class='symbolCheckboxClass'/>
+                                <span class="icon-box">일일</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr class="symbolPersonalWrapper" id="authentic2_Wrapper">
+                          <td class="symbolImageCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Authentic2.png')}}" />
+                          </td>
+                          <td class="symbolNamingCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Auth2.png')}}" />
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_authentic2_daily' class='symbolCheckboxClass'/>
+                                <span class="icon-box">일일</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr class="symbolPersonalWrapper" id="authentic3_Wrapper">
+                          <td class="symbolImageCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Authentic3.png')}}" />
+                          </td>
+                          <td class="symbolNamingCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Auth3.png')}}" />
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_authentic3_daily' class='symbolCheckboxClass'/>
+                                <span class="icon-box">일일</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr class="symbolPersonalWrapper" id="authentic4_Wrapper">
+                          <td class="symbolImageCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Authentic4.png')}}" />
+                          </td>
+                          <td class="symbolNamingCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Auth4.png')}}" />
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_authentic4_daily' class='symbolCheckboxClass'/>
+                                <span class="icon-box">일일</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr class="symbolPersonalWrapper" id="authentic5_Wrapper">
+                          <td class="symbolImageCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Authentic5.png')}}" />
+                          </td>
+                          <td class="symbolNamingCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Auth5.png')}}" />
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_authentic5_daily' class='symbolCheckboxClass'/>
+                                <span class="icon-box">일일</span>
+                            </label>
+                          </td>
+                        </tr>
+                        <tr class="symbolPersonalWrapper" id="authentic6_Wrapper">
+                          <td class="symbolImageCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Authentic6.png')}}" />
+                          </td>
+                          <td class="symbolNamingCol">
+                            <img src="{{ url_for('static', filename='img/Arcane/Auth6.png')}}" />
+                          </td>
+                          <td class="symbolPeriodCol">
+                            <label class="symbolCheckBoxLabel">
+                              <input type="checkbox" name="" id='symbol_authentic6_daily' class='symbolCheckboxClass'/>
+                                <span class="icon-box">일일</span>
+                            </label>
+                          </td>
+                        </tr>
+                      </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="accordion-item">
+                <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="true" aria-controls="panelsStayOpen-collapseThree" id="basicWrapperBtn">
+                        BASIC/EVENT
+                    </button>
+                </h2>
+                <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body" id="basicContentsWrapper">
+                        <h3 class="header">Basic</h3>
+                        <hr>
+                        <div class="basicPersonalWrapper" id="basicUrsusWrapper">
+                            <label class="form-check-label basicCheckBoxLabel" for="ursusCheckbox">
+                                <input class="form-check-input" type="checkbox" value="" id="ursusCheckbox">
+                                우르스
+                            </label>
+                        </div>
+                        <div class="basicPersonalWrapper" id="basicFarmWrapper">
+                            
+                            <label class="form-check-label basicCheckBoxLabel" for="farmHarvestCheckbox">
+                              <input class="form-check-input" type="checkbox" value="" id="farmHarvestCheckbox">
+                                농장 와르 수확
+                            </label>
+                        </div>
+                        <div class="basicPersonalWrapper" id="basicGiftWrapper">
+                            <label class="form-check-label basicCheckBoxLabel" for="dailyGiftCheckbox">
+                              <input class="form-check-input" type="checkbox" value="" id="dailyGiftCheckbox">
+                                데일리 기프트 수령
+                            </label>
+                        </div>
+                        <div class="basicPersonalWrapper" id="basicMonsterParkWrapper">
+                            <label class="form-check-label basicCheckBoxLabel" for="monsterParkCheckbox">
+                              <input class="form-check-input" type="checkbox" value="" id="monsterParkCheckbox">
+                                몬스터 파크 클리어
+                            </label>
+                        </div>
+                        <div class="basicPersonalWrapper" id="basicUnionCoinWrapper">
+                            <label class="form-check-label basicCheckBoxLabel" for="UnionCoinCheckbox">
+                              <input class="form-check-input" type="checkbox" value="" id="UnionCoinCheckbox">
+                                유니온 코인 수령
+                            </label>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="accordion-body" id="eventContentsWrapper">
+                        <h3 class="header">Event</h3>
+                        <hr>
+                        <div class="eventPersonalWrapper" id="eventBasicCheckWrapper">
+                            <label class="form-check-label eventCheckBoxLabel" for="eventAttendanceCheckbox">
+                              <input class="form-check-input" type="checkbox" value="" id="eventAttendanceCheckbox">
+                                이벤트 기본 출석
+                            </label>
+                        </div>
+                        <div class="eventPersonalWrapper" id="eventDeepCheckWrapper">
+                            <label class="form-check-label eventCheckBoxLabel" for="eventDeepAttendanceCheckbox">
+                              <input class="form-check-input" type="checkbox" value="" id="eventDeepAttendanceCheckbox">
+                                이벤트 심화 출석 (<label id='eventDeepAttendanceCnt'>0</label>/3)
+                            </label>
+                        </div>
+                        <div class="eventPersonalWrapper" id="eventEXPFarmWrapper">
+                            <label class="form-check-label eventCheckBoxLabel" for="eventEXPFarmCheckbox">
+                              <input class="form-check-input" type="checkbox" value="" id="eventEXPFarmCheckbox">
+                                이벤트 식량창고 (<label id='eventEXPFarmCnt'>0</label>/3)
+                            </label>
+                        </div>
+                        <div class="eventPersonalWrapper" id="eventEXPPunchKingWrapper">
+                            <label class="form-check-label eventCheckBoxLabel" for="eventEXPPunchKingCheckbox">
+                              <input class="form-check-input" type="checkbox" value="" id="eventEXPPunchKingCheckbox">
+                                이벤트 코코넛 스매시 (<label id='eventEXPPunchKingCnt'>0</label>/3)
+                            </label>
+                        </div>
+                        <div class="eventPersonalWrapper" id="eventEXPAdventureWrapper">
+                            <label class="form-check-label eventCheckBoxLabel" for="eventEXPAdventureCheckbox">
+                              <input class="form-check-input" type="checkbox" value="" id="eventEXPAdventureCheckbox">
+                                이벤트 어드벤쳐 (<label id='eventEXPAdventureCnt'>0</label>/3)
+                            </label>
+                        </div>
+                        <hr>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    
+</div>
+<div id="idDataTmpSave" data-geocode='{{ id_list|tojson|safe }}'></div>
+{% endblock %}
