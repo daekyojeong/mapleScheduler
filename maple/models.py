@@ -183,13 +183,19 @@ def updateDetailColVisible(userObj, data):
     userObj.visible_boss = json.dumps(data['visible_boss'])
     userObj.visible_basic = json.dumps(data['visible_basic'])
     userObj.visible_event = json.dumps(data['visible_event'])
-    print(userObj.visible_boss)
+    userObj.last_update = datetime.now()
+        
     db.session.commit()
     
 def updateDetailColCheckbox(userObj, key, val):
     setattr(userObj, key, val)
+    userObj.last_update = datetime.now()
+        
     db.session.commit()
-    
+
+def deleteDetailCol(userObj):
+    db.session.delete(userObj)
+    db.session.commit()  
 def dbToDictFormatting(userObj):
     userDict = {
         'symbol':{},
@@ -218,5 +224,4 @@ def dbToDictFormatting(userObj):
     for dicAttr in DBNameList['basic']:
         userDict['basic'][dicAttr] = getattr(userObj, dicAttr)
         
-    print(userDict)
     return userDict

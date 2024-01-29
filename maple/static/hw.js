@@ -132,7 +132,7 @@ function clickHomeworkNickname(e){
     
     $('#hwDeleteImg').attr("style","display:inline-flex");
     $('#hwSettingImg').attr("style","display:inline-flex");
-
+    $('#hwRefreshImg').attr("style","display:inline-flex");
 
     // tab color change
     tablinks = document.getElementsByClassName("tablink");

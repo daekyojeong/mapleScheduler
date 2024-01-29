@@ -29,6 +29,39 @@ const CharacterData = (function() {
             });
             return findCharacter
         },
+        updateNowCharacterInfo: function(nickname){
+            const findIdx = characters.findIndex(function(data){ return data.nickname === nickname});
+            
+            const newCharacterURL = 'http://' + window.location.host + '/update_char';
+            var verification = false;
+            $.ajax({
+                type:'POST',
+                url:newCharacterURL,
+                data:JSON.stringify({'nickname':characters[findIdx].nickname}),
+                dataType:'json',
+                contentType: 'application/json',
+                async:true,
+                success: function(response){
+                    verification = response['suc'];
+                    var data = response['data'];
+                    if (verification){
+                        data = JSON.parse(data);
+
+                        console.log(data);
+                        console.log(data.nickname);
+                        characters[findIdx].nickname = data.nickname;
+                        characters[findIdx].lvl = data.lvl;
+                        characters[findIdx].imgUrl = data.imgUrl;
+                        characters[findIdx].job = data.job;
+                        console.log('character_update_success');
+                    }
+                }
+            });
+            
+            console.log('!!!!!!!!');
+            console.log(characters[findIdx]);
+            return verification
+        },
         checkCharacterName: function (newNickname){
             var isExist = false;
             characters.forEach(function(character){
@@ -42,6 +75,19 @@ const CharacterData = (function() {
             const findIdx = characters.findIndex(function(data){ return data.nickname === nickname});
             if (findIdx != -1){
                 characters.splice(findIdx, 1);
+
+                const newCharacterURL = 'http://' + window.location.host + '/character_delete';
+                $.ajax({
+                    type:'POST',
+                    url:newCharacterURL,
+                    data:JSON.stringify({'nickname':nickname}),
+                    dataType:'json',
+                    contentType: 'application/json',
+                    async:true,
+                    success: function(response){
+                        console.log('character_delete_success');
+                    }
+                });
                 return true
             }
             return false

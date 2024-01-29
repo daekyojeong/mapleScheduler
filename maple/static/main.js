@@ -19,7 +19,13 @@ $(function(){
   });
 });
 
-
+$(function(){
+  $("#hwRefreshImg").click(function(){
+    var nickname = $('#homework_header_nickname').text();
+    var check = CharacterData.updateNowCharacterInfo(nickname);
+    
+  });
+});
 $( document ).ready(function(){
   var id_list = JSON.parse(JSON.parse($("#idDataTmpSave").attr('data-geocode')));
   

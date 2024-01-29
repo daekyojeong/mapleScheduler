@@ -5,6 +5,7 @@ from werkzeug.utils import redirect
 from maple import db
 from maple.forms import UserCreateForm, UserLoginForm
 from maple.models import UserLogin
+from maple.scripts import db_init
 import functools
 bp = Blueprint('auth', __name__, url_prefix='/auth')
 
@@ -39,6 +40,7 @@ def login():
             session.clear()
             session['user_id'] = user.id
             _next = request.args.get('next', '')
+            db_init.total_reset(user.id)
             if _next:
                 return redirect(_next)
             else:
